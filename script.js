@@ -109,8 +109,9 @@ function moveBall() {
     if (ball.x > paddle.x && ball.x < paddle.x + paddle.width) {
       ball.dy = -ball.dy;
     } else {
-      alert("Oyun Bitti!");
-      document.location.reload();
+        alert("GAME OVER");
+        document.location.reload();
+        clearInterval(interval); // İnterval'i sıfırlar, animasyonu durdurur
     }
   }
 }
