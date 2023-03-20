@@ -57,6 +57,10 @@ function drawBricks() {
   }
 }
 
+function saveScore() {
+  localStorage.setItem("score", score);
+}
+
 function collisionDetection() {
   for (let c = 0; c < brickColumnCount; c++) {
     for (let r = 0; r < brickRowCount; r++) {
@@ -73,6 +77,7 @@ function collisionDetection() {
           score++;
           if (score === maxScore) {
             alert("Tebrikler! Kazandınız!");
+            saveScore();
             document.location.reload();
           }
         }
@@ -109,9 +114,9 @@ function moveBall() {
     if (ball.x > paddle.x && ball.x < paddle.x + paddle.width) {
       ball.dy = -ball.dy;
     } else {
-        alert("GAME OVER");
-        document.location.reload();
-        clearInterval(interval); // İnterval'i sıfırlar, animasyonu durdurur
+      alert("GAME OVER - Puan: " + score);
+      document.location.reload();
+      clearInterval(interval); // İnterval'i sıfırlar, animasyonu durdurur
     }
   }
 }
@@ -169,5 +174,6 @@ function movePaddle() {
     paddle.x -= paddle.speed;
   }
 }
+
 
 draw();
