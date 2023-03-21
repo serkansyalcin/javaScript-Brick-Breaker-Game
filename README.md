@@ -28,4 +28,6 @@ function drawScore() fonksiyonu, oyuncunun puanını ekranda gösterir.
 
 function draw() fonksiyonu, oyunun animasyonunu ve çizim işlemlerini yapar.
 
+Oyunu duraklatmak için, klavyeden ESC tuşunu kullanabilirsiniz.
+
 ![image](https://user-images.githubusercontent.com/26199757/226490351-579da275-86ac-4dd8-9919-b2a2ac2c842b.png)
