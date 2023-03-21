@@ -1,6 +1,6 @@
 # javaScript - Brick Breaker Game
 
-## Bu oyun, platform üzerinde yukarı doğru hareket eden bir topu yönlendirirler. Amacı, platformu kullanarak tuğlaları kırmak ve oyun alanında mümkün olduğunca yüksek bir puan elde etmektir. Oyun bitince, clearInterval fonksiyonu çağrılarak top hareketi durdurulur.
+## Bu oyun, platform üzerinde yukarı doğru hareket eden bir topu yönlendirir. Amacı, platformu kullanarak tuğlaları kırmak ve oyun alanında mümkün olduğunca yüksek bir puan elde etmektir. Oyun bitince, clearInterval fonksiyonu çağrılarak top hareketi durdurulur.
 
 ### Bu kod, bir tuğla kırma oyununu oluşturmak için kullanılır. İlk olarak, canvas ve bağlantılı bileşenler belirlenir. Daha sonra top ve çubuk objeleri, tuğla objeleri, skor ve en yüksek skor tanımlanır. Top ve çubuk hareketleri, tuğla yok etme, çarpışma tespiti ve oyunu yeniden başlatma fonksiyonları da eklenir.
 
