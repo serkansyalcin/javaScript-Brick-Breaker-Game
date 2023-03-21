@@ -175,5 +175,29 @@ function movePaddle() {
   }
 }
 
+let paused = false;
+let intervalId = null;
+
+function pauseGame() {
+  if (!paused) {
+    paused = true;
+    clearInterval(intervalId);
+    alert("Oyun duraklatıldı. Devam etmek için herhangi bir tuşa basın.");
+  }
+}
+
+function resumeGame() {
+  if (paused) {
+    paused = false;
+  }
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    pauseGame();
+  } else {
+    resumeGame();
+  }
+});
 
 draw();
